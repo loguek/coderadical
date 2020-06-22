@@ -1,1 +1,1 @@
-A quick little boiler plate to use as a basis for any pixi projects I might decide to throw together
+Source code for my coderadical site, will ultimately merge with the blog once I'm happy with design
