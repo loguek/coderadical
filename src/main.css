@@ -53,6 +53,7 @@ main {
     justify-content: center;
     padding: 0 20px;
     margin-top: 64px;
+    z-index: 1;
 }
 
 #intro h1{
@@ -66,7 +67,7 @@ main {
     font-size: 0.8em;
     color: #cacaca;
     padding: 0 0 0 3px;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
 }
 
 #intro h4{
