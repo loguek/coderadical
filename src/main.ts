@@ -1,5 +1,5 @@
-/** INSERT code here */
+const section1 = document.querySelector('#history') as HTMLElement;
 
-(() => {
-    console.log('Hello World')
-})();
+window.addEventListener('scroll', () => {
+    // Todo decide on effect
+});
