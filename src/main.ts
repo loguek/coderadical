@@ -1,5 +1,8 @@
-/** INSERT code here */
+function updateHeight() {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight / 100}px`);
+}
 
-(() => {
-    console.log('Hello World')
-})();
+window.addEventListener('resize', () => updateHeight());
+window.addEventListener('orientationchange', () => updateHeight());
+
+updateHeight();
