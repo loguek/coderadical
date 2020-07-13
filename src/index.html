@@ -7,11 +7,38 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <div id="display">&nbsp;</div>
-    <header>
-        <img src="./images/logo.png" alt="coderadical" class="codeLogo" />
+    <header class="flex-row">
+        <div class="logoContainer">
+            <img src="./images/logo.png" alt="coderadical" />
+        </div>
+        <div class="ext-link flex-row">
+            <a href="https://github.com/loguek">
+                <img src="images/GitHub-Mark-Light-32px.png" >
+                klogue
+            </a>
+            <span class="divider"></span>
+            <a href="https://www.linkedin.com/in/loguek/">
+                <img src="images/linkedin.png">
+                klogue
+            </a>
+        </div>
     </header>
-    
+    <nav class="fixed-top">
+        <ul class="vertical-center">
+            <li class="nav-item">
+                <a href="#" class="nav-link lower-case active">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link lower-case">Work</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link lower-case">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link lower-case">Contact</a>
+            </li>
+        </ul>
+    </nav>
     <div id="intro">
         <div class="content">
             <h3>Hello there! I'm</h3>
@@ -21,17 +48,6 @@
         </div>
     </div>
     
-    <footer>
-        <a href="https://github.com/loguek">
-            <img src="images/GitHub-Mark-Light-32px.png">
-            klogue
-        </a>
-        <span class="divider"></span>
-        <a href="https://www.linkedin.com/in/loguek/">
-            <img src="images/linkedin.png">
-            klogue
-        </a>
-    </footer>
-    <script src="main.ts"></script>    
+       
 </body>
 </html>
