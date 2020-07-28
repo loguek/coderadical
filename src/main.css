@@ -11,7 +11,7 @@ html, body {
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     background: #232D49;
-    
+    scroll-behavior: smooth;
 }
 
 html { font-size: 100% } 
@@ -32,6 +32,7 @@ body {
 nav {
     height: 100vh;
     position: relative;
+    z-index: 999;
 }
 
 
@@ -65,7 +66,6 @@ nav .nav-item{
 nav .nav-link {
     display: block;
     padding: 1rem 0.5rem 1rem 0.5rem;
-    
 }
 
 nav a{
@@ -82,7 +82,6 @@ nav a{
 nav a.active{
     color: rgba(255,255,255);
 }
-
 
 @keyframes headerTransition {
     0% {
@@ -103,6 +102,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 999;
 }
 
 .lower-case {
@@ -118,16 +118,28 @@ main {
     z-index: 1
 }
 
-#intro {
-    height: -o-calc(100vh - 129px); /* opera */
-    height: -webkit-calc(100vh - 129px); /* google, safari */
-    height: -moz-calc(100vh - 129px); /* firefox */
+
+.minFullPage {
+
+    min-height: 100vh;
+
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 64px;
-    z-index: 1;
+}
+
+#work{
+    background-color: royalblue;
+}
+
+#blog{
+    background-color: red;
+}
+
+#contact{
+    background-color: seagreen;
 }
 
 #intro h1{
@@ -173,14 +185,11 @@ main {
 .ext-link img{
     max-height: 16px;
     width: auto;
-    padding: 0 5px;
-    
+    padding: 0 5px;    
 }
 
 .ext-link a:link, a:visited {
     display: flex;
-    justify-content: center;
-    align-items: center; 
     color: white;
     text-decoration: none;
     font-weight: bold;
